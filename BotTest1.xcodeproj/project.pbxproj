@@ -14,8 +14,6 @@
 		8583EABC1BD91AD0009551F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8583EABA1BD91AD0009551F7 /* LaunchScreen.storyboard */; };
 		8583EAC71BD91AD0009551F7 /* BotTest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583EAC61BD91AD0009551F7 /* BotTest1Tests.swift */; };
 		8583EAD21BD91AD0009551F7 /* BotTest1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583EAD11BD91AD0009551F7 /* BotTest1UITests.swift */; };
-		8583EAE11BD91D81009551F7 /* InsertFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8583EADF1BD91D76009551F7 /* InsertFramework.framework */; };
-		8583EAE21BD91D81009551F7 /* InsertFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8583EADF1BD91D76009551F7 /* InsertFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8583EAE21BD91D81009551F7 /* InsertFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +60,6 @@
 		8583EACD1BD91AD0009551F7 /* BotTest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotTest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8583EAD11BD91AD0009551F7 /* BotTest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotTest1UITests.swift; sourceTree = "<group>"; };
 		8583EAD31BD91AD1009551F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8583EADF1BD91D76009551F7 /* InsertFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InsertFramework.framework; path = /Users/Avner/Developer/Testing/BotTest1/BotTest1/InsertFramework.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8583EAE11BD91D81009551F7 /* InsertFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "#/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
