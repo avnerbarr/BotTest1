@@ -155,6 +155,7 @@
 				8583EAAB1BD91AD0009551F7 /* Frameworks */,
 				8583EAAC1BD91AD0009551F7 /* Resources */,
 				8583EAE31BD91D81009551F7 /* Embed Frameworks */,
+				8583EAE41BD92134009551F7 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -269,6 +270,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8583EAE41BD92134009551F7 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/BotTest1/InsertFramework.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8583EAAA1BD91AD0009551F7 /* Sources */ = {
