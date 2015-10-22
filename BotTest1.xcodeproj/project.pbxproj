@@ -14,6 +14,8 @@
 		8583EABC1BD91AD0009551F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8583EABA1BD91AD0009551F7 /* LaunchScreen.storyboard */; };
 		8583EAC71BD91AD0009551F7 /* BotTest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583EAC61BD91AD0009551F7 /* BotTest1Tests.swift */; };
 		8583EAD21BD91AD0009551F7 /* BotTest1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8583EAD11BD91AD0009551F7 /* BotTest1UITests.swift */; };
+		8583EAE11BD91D81009551F7 /* InsertFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8583EADF1BD91D76009551F7 /* InsertFramework.framework */; };
+		8583EAE21BD91D81009551F7 /* InsertFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8583EADF1BD91D76009551F7 /* InsertFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8583EAE31BD91D81009551F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8583EAE21BD91D81009551F7 /* InsertFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8583EAAE1BD91AD0009551F7 /* BotTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8583EAB11BD91AD0009551F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,7 @@
 		8583EACD1BD91AD0009551F7 /* BotTest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotTest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8583EAD11BD91AD0009551F7 /* BotTest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotTest1UITests.swift; sourceTree = "<group>"; };
 		8583EAD31BD91AD1009551F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8583EADF1BD91D76009551F7 /* InsertFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InsertFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8583EAE11BD91D81009551F7 /* InsertFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +115,7 @@
 		8583EAB01BD91AD0009551F7 /* BotTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				8583EADF1BD91D76009551F7 /* InsertFramework.framework */,
 				8583EAB11BD91AD0009551F7 /* AppDelegate.swift */,
 				8583EAB31BD91AD0009551F7 /* ViewController.swift */,
 				8583EAB51BD91AD0009551F7 /* Main.storyboard */,
@@ -135,6 +154,7 @@
 				8583EAAA1BD91AD0009551F7 /* Sources */,
 				8583EAAB1BD91AD0009551F7 /* Frameworks */,
 				8583EAAC1BD91AD0009551F7 /* Resources */,
+				8583EAE31BD91D81009551F7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +418,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BotTest1",
+				);
 				INFOPLIST_FILE = BotTest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Insert.BotTest1;
@@ -409,6 +433,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BotTest1",
+				);
 				INFOPLIST_FILE = BotTest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Insert.BotTest1;

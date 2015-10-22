@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import InsertFramework
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        InsertManager.sharedManager().initSDK("f97ca8f0ee771cd88962224a4a5a3c2505a81c7c7534ec70ecb54a16314d34b69e2f49ffea80d6dc0318a5d1a25a28af$e2644f7f78e291cccdc7f18f8935e7dd$6efb7870012c1dc3ef6ea8ace6d73dca3d62eb7051c792975be954384cfa25d0")
         return true
     }
 
