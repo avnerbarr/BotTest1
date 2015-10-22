@@ -63,7 +63,7 @@
 		8583EACD1BD91AD0009551F7 /* BotTest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotTest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8583EAD11BD91AD0009551F7 /* BotTest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotTest1UITests.swift; sourceTree = "<group>"; };
 		8583EAD31BD91AD1009551F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8583EADF1BD91D76009551F7 /* InsertFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = InsertFramework.framework; sourceTree = "<group>"; };
+		8583EADF1BD91D76009551F7 /* InsertFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InsertFramework.framework; path = /Users/Avner/Developer/Testing/BotTest1/BotTest1/InsertFramework.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,6 @@
 		8583EAB01BD91AD0009551F7 /* BotTest1 */ = {
 			isa = PBXGroup;
 			children = (
-				8583EADF1BD91D76009551F7 /* InsertFramework.framework */,
 				8583EAB11BD91AD0009551F7 /* AppDelegate.swift */,
 				8583EAB31BD91AD0009551F7 /* ViewController.swift */,
 				8583EAB51BD91AD0009551F7 /* Main.storyboard */,
